@@ -85,12 +85,12 @@ body {
     line-height: 1.5;
     background-color: var(--darkpink);
     background-image:url('images/background.svg');
-    background-size: cover;
+    background-size: cover 90%;
     background-position: center 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     color: var(--lightblue);
-    height: 300vh; 
+    height: 150vh; 
     display: flex; 
     flex-direction: column; 
  
@@ -168,20 +168,38 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   margin-top: 150px;
+  position: relative; /* Ensures that the child position can be set relative to this */
+
 }
 
 .mission-statement {
     color: var(--darkpink);
     grid-column: 2;
-    margin-right: 80px;
+    margin-right: 200px;
+ 
 }
 
 .whatwedo {
     color: var(--lightblue);
     grid-column: 1;
-    margin-left: 80px;
+    margin-left: 200px;
+
 }
 
+
+  .mission-statement, .whatwedo {
+      position: absolute;
+      top: 50%; /* Adjust this value based on alignment needs */
+      transform: translateY(-50%); /* Centers them vertically based on their height */
+  }
+  
+  .mission-statement {
+      left: 15%; /* Adjust based on background alignment */
+  }
+  
+  .whatwedo {
+      right: 15%; /* Adjust based on background alignment */
+  }
 
 
 
