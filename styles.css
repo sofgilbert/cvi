@@ -82,9 +82,9 @@ html {
 
 body {
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: 1.2;
     background-color: var(--darkpink);
-    background-image:url('images/background-text.svg');
+    background-image:url('images/background.svg');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,8 +165,8 @@ header {
 main {
   font-family: 'Roboto', sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: .75fr .75fr;
+  gap: 70px;
   margin-top: 220px;
 
 }
@@ -174,7 +174,7 @@ main {
 .mission-statement {
     color: var(--darkpink);
     grid-column: 2;
-    margin-right: 200px;
+    margin-right: 250px;
  
 }
 
@@ -186,8 +186,8 @@ main {
 .whatwedo {
     color: var(--lightblue);
     grid-column: 1;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left: 250px;
+    margin-top: 360px;
 }
 
 .whatwedo h2 {
