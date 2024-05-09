@@ -82,7 +82,7 @@ html {
 
 body {
     text-rendering: optimizeSpeed;
-    line-height: 1.2;
+    line-height: 1.4;
     background-color: var(--darkpink);
     background-image:url('images/background.svg');
     background-size: 100%;
@@ -93,7 +93,15 @@ body {
     height: 140vh; 
     display: flex; 
     flex-direction: column; 
- 
+    max-width: 1370px; 
+    margin: 0 auto; 
+    position: relative;
+}
+
+@media (min-width: 1382px) {
+  body {
+      background-size: 1382px 1319px; 
+  }
 }
 
 
@@ -164,6 +172,7 @@ header {
 
 main {
   font-family: 'Roboto', sans-serif;
+  font-weight: 350;
   display: grid;
   grid-template-columns: .75fr .75fr;
   gap: 70px;
@@ -187,7 +196,7 @@ main {
     color: var(--lightblue);
     grid-column: 1;
     margin-left: 250px;
-    margin-top: 360px;
+    margin-top: 340px;
 }
 
 .whatwedo h2 {
@@ -210,11 +219,19 @@ footer {
     background-color: var(--white); 
     padding: 40px 0; 
     margin-top: auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+    z-index: 1;
   }
   
   .footer-content {
     max-width: 1200px; 
     margin: 0 auto; 
+    width: 100%;
   }
   
   .footer-nav {
@@ -258,6 +275,11 @@ footer img {
     margin: 0 auto; 
 }
 
+@media (min-width: 1371px) {
+  footer {
+      max-width: none; /* Remove the max-width constraint for larger viewports */
+  }
+}
 
 
 
@@ -265,6 +287,7 @@ footer img {
 @media only screen and (max-width: 768px) {
     header nav ul {
         flex-direction: column; /* Change the flex direction to column */
+        line-height: 2.5;
     }
 
     nav ul li {
@@ -278,4 +301,54 @@ footer img {
     .footer-nav ul li {
         margin: 10px 0; /* Adjust the margin for the column layout */
     }
+}
+
+/* Adjusting for smaller viewports so that the entire formatting changes smaller than: 1315px x 1319px */
+
+@media only screen and (max-width: 1315px) {
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(86, 0, 47, 0.6); /* 0% opacity */
+    z-index: -1; /* doesn't cover content */
+}
+
+/* Ensure the body's position is relative to contain the pseudo-element */
+body {
+    position: relative;
+}
+  /* Change color of .mission-statement */
+  .mission-statement {
+      color: var(--lightpink);
+  }
+
+  /* Arrange main elements in a column */
+  main {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      gap: 1px; 
+      margin-top: 100px;
+  }
+
+  /* Adjust specific positioning for .mission-statement and .whatwedo */
+  .mission-statement, .whatwedo {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 50%; /* Limit the width to improve readability */
+  }
+
+  /* Positioning adjustment for .whatwedo */
+.whatwedo {
+  margin-top: 50px; /* Reduce or remove top margin to start higher */
+  margin-bottom: 100px; /* Optional: adjust bottom margin to control space below */
+}
+
+.whatwedo h2 {
+  text-align: left;
+}
 }
