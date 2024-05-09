@@ -120,7 +120,6 @@ h1, h2, h3, h4 {
 
 
 
-
 /* Header Styles */
 header {
     display: flex;
@@ -177,24 +176,74 @@ main {
   font-family: 'Roboto', sans-serif;
   font-weight: 350;
   display: flex;
-  margin-top: 50px;
-  margin-left: auto;
-      margin-right: auto;
-      max-width: 50%;
-}
-
-main h2 {
-    font-family: 'Roboto', sans-serif;
-font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--lightblue);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   margin-bottom: 100px;
 }
 
-main p {
+.founders {
     font-family: 'Archivo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 80%;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.founders h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center; 
+    color: var(--lightblue);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    align-self: center; 
+}
+
+.founders p {
     margin-bottom: 20px;
+    text-align: left; 
+}
+
+.descriptions {
+    font-family: 'Archivo', sans-serif;
+    display: grid;
+    grid-template-columns: .33fr 1fr; /* One fraction each for image and description */
+    gap: 50px; /* Provides spacing between columns */
+    width: 80%; /* Consistent with .founders for alignment */
+    margin-top: 50px;
+    margin-bottom: 50px; /* Additional margin for spacing below */
+    max-width: 960px; /* Aligns with the founders max-width */
+}
+
+.descriptions div:nth-child(odd) {
+    display: flex;
+    justify-content: center; /* Centers the image in its grid column */
+    align-items: center; /* Vertically aligns the image */
+}
+
+.descriptions div:nth-child(even) {
+    display: flex;
+    flex-direction: column; /* Stacks the h3 and p vertically */
+    justify-content: center; /* Vertically centers the content */
+}
+
+.descriptions img {
+    width: 100%; /* Makes the image responsive within its container */
+    max-width: 300px; /* Limits image size to not become too large */
+}
+
+.descriptions h3, .descriptions p {
+    margin: 10px 0; /* Adds spacing between the header and paragraph */
+}
+
+.descriptions h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 
@@ -277,33 +326,57 @@ footer img {
 
 @media only screen and (max-width: 900px) {
     header nav ul {
-        flex-direction: column; /* Change the flex direction to column */
+        flex-direction: column; 
         line-height: 2.5;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust the margin for the column layout */
+        margin: 10px 0; 
     }
 
-
     main {
-        margin-top: 1px;
+        margin-top: 20px;
         margin-left: auto;
             margin-right: auto;
-            max-width: 80%;
-        margin-bottom: 100px;
+            max-width: 100%;
       }
       
       main h2 {
-        margin-bottom: 20px;
-        font-size: 30px;
+        margin-bottom: 50px;
       }
       
       main p {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
       }
       
       body {
         background-size: 1382px 1319px; 
+    }
+
+    .founders h2 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .descriptions {
+        grid-template-columns: 1fr; 
+    }
+    
+    .descriptions div {
+        display: flex;
+        flex-direction: column; 
+        align-items: left; 
+        text-align: left; 
+    }
+
+    .descriptions img {
+        max-width: 50%; 
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .founders p {
+        max-width: 960px; /* Set a maximum width */
+        width: 100%; /* Adjust the width to be responsive */
     }
 }
