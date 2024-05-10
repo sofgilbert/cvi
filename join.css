@@ -443,5 +443,9 @@ footer img {
         margin-bottom: 2px;
       }
 
+      body {
+        background-attachment: fixed;
+      }
+
 
 }

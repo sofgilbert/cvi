@@ -354,6 +354,7 @@ footer img {
       
       body {
         background-size: 1382px 1319px; 
+            background-attachment: fixed;
     }
 
     .founders h2 {
