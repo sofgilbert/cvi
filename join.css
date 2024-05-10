@@ -436,4 +436,12 @@ footer img {
       body {
         background-size: 1382px 1319px; 
     }
+
+    input, .select__input, .consent-box{
+        width: 300px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+
+
 }
