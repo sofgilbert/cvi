@@ -15,42 +15,45 @@
 <body>
     <header>
       <div class="left-logo">
-        <a href="index.html"><img src="images/Positive/pos-left-logo.svg" alt="Institutes Name"></a>
+        <a href="index.html"><img src="images/Positive/pos-left-logo.svg" alt="Communication Value Institute Logo"></a>
       </div>
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul>
           <li><a href="whatwedo.html">What we do</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="purpose.html">Our Purpose</a></li>
           <li><a href="founders.html">Our Founders</a></li>
-          <li><a href="join.html" class="active">Join Us</a></li>
+          <li><a href="join.html" class="active" aria-current="page">Join Us</a></li>
         </ul>
       </nav>
     </header>
   
     <main>
         
-      <section class="join-us">
+      <section class="join-us" aria-labelledby="join-us-header">
         <h2>JOIN US</h2>
       </section>
 
       <div class="wrapper">
 
-        <form action="/cvi-form-page" method="post">
+        <form action="/cvi-form-page" method="post" aria-label="Membership Form">
             <div class="input-box">
+              <label for="first-name"></label>
                 <input type="text" id="first-name" name="user_firstname" placeholder="First name" required>
             </div>
 
             <div class="input-box">
+              <label for="last-name"></label>
                 <input type="text" id="last-name" name="user_lastname" placeholder="Last name" required>
             </div>
 
             <div class="input-box">
+              <label for="email"></label>
                 <input type="email" id="mail" name="user_email" placeholder="Email" required>
             </div>
 
             <div class="select">
-
+              <label for="country-selector"></label>
                 <select class="select__input" name="country-selector" id="country-selector" required>
                   <option value="0">Location</option>
                   <option value="UK">England</option>
