@@ -86,7 +86,7 @@ body {
     background-color: var(--white);
     background-image:url('images/background-other.svg');
     background-size: 1382px 1319px; 
-    background-position: bottom ;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--darkpink);
