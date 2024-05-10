@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Communications Value Institute | Join Us</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Join us..." />
+  <link rel="stylesheet" href="join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      <div class="left-logo">
+        <a href="index.html"><img src="images/Positive/pos-left-logo.svg" alt="Institutes Name"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="whatwedo.html">What we do</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="purpose.html">Our Purpose</a></li>
+          <li><a href="founders.html">Our Founders</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+        
+      <section class="join-us">
+        <h2>JOIN US</h2>
+      </section>
+
+      <div class="wrapper">
+
+        <form action="/cvi-form-page" method="post">
+            <div class="input-box">
+                <input type="text" id="first-name" name="user_firstname" placeholder="First name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="last-name" name="user_lastname" placeholder="Last name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="mail" name="user_email" placeholder="Email" required>
+            </div>
+
+            <div class="select">
+
+                <select class="select__input" name="country-selector" id="country-selector" required>
+                  <option value="0">Location</option>
+                  <option value="UK">England</option>
+                  <option value="UK">The Netherlands</option>
+                  <option value="IT">Canada</option>
+                  <option value="UK">Norway</option>
+                  <!-- other <countries here -->
+                </select>
+            </div>
+
+            <div class="consent-box">
+                <label><input type="checkbox" required>I consent to receiving communications related to CVI</label>
+            </div>
+
+            <button type="submit" class="button">Join CVI</button>
+
+        </form>
+
+      </div>
+
+      
+  
+    </main>
+  
+    <footer>
+      <div class="footer-content">
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">CVI Membership</a></li>
+                <li><a href="#">Login for members</a></li>
+            </ul>
+        </nav>
+        <img src="images/emblem.svg" alt="Institutes emblem">
+      </div>
+    </footer>
+
+  </body>
+  </html>

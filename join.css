@@ -1,0 +1,433 @@
+:root {
+    --white: #fff;
+    --black: #000000;
+    --darkpink: #56002F;
+    --midpink: #812A54;
+    --lightpink: #A77894;
+    --greenblue: #b6d3e4;
+    --lightblue: #AACEF5;
+
+    --size-100: 0.25rem;
+    --size-200: 0.5rem;
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+    --size-500: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+    --size-largest: 6rem;
+}
+
+/* Fonts */
+
+    /* Montserrat */
+    .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    }
+
+    /* Roboto */
+    
+    .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+/* General CSS settings */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.4;
+    background-color: var(--white);
+    background-image:url('images/background-other.svg');
+    background-size: 1382px 1319px; 
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--darkpink);
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 auto; 
+    position: relative;
+}
+
+
+
+body a {
+    color: var(--lightblue); 
+    text-decoration: none; 
+  }
+  
+  body a:hover {
+    color: var(--lightpink); 
+    text-decoration: none; 
+  }
+
+h1, h2, h3, h4,
+button, input, label {
+    line-height: 2;
+}
+
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+
+
+
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 100px 40px;
+  }
+  
+  /* Title/Logo Styles */
+  .left-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 200px; 
+  }
+  
+  .left-logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Navigation Styles */
+  header nav {
+    width: 100%; /* Give the nav full width to center the contents properly */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center; /* Center navigation items */
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+
+
+
+/* Main section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--lightblue);
+    margin-bottom: 50px;
+}
+
+/* Input sections */
+form {
+    font-family: 'Archivo', sans-serif;
+    display: inline-block;
+}
+
+  input, select {
+    font: 'Archivo', sans-serif;
+    font-size: 0.8em;
+    width: 400px;
+    font-weight: 300;
+    color: var(--darkpink);
+    padding: 10px;
+    background: 0.1;
+    border-radius: 20px;
+    border: 1.5px solid var(--darkpink);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font: 'Archivo', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    
+  }
+::placeholder {
+    color: var(--darkpink);
+  }
+
+input:focus,
+textarea:focus {
+  background: rgb(0 0 0 / 10%);
+}
+
+
+.select__input {
+    appearance: none; 
+    -webkit-appearance: none; 
+    background-color: var(--white);
+    border: 1.5px solid var(--darkpink); 
+    width: 400px; 
+    padding: 10px; 
+    padding-right: 90px; /* Increased right padding to account for the arrow */
+    border-radius: 20px;
+    color: var(--darkpink); 
+}
+
+.select__input::-ms-expand {
+    display: none; /* Hides the default arrow in IE */
+}
+
+
+
+
+
+
+
+
+
+/* Consent check-box */
+
+.consent-box {
+    display: flex;
+    align-items: center;
+    font-size: .8em; 
+    text-align: left;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.consent-box input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; 
+    background-color: var(--white); 
+    border: 1px solid var(--darkpink); 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle; 
+    position: relative; 
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.consent-box input[type="checkbox"]:checked {
+    background-color: var(--darkpink); 
+    border-color: var(--darkpink); 
+}
+
+.consent-box input[type="checkbox"]:focus {
+    outline: none; 
+}
+
+.consent-box label {
+    display: block; 
+    text-align: left; 
+    margin-left: 30px; 
+    width: 100%; 
+    line-height: 1.2;
+    position: relative; 
+    left: -20px; 
+}
+
+
+
+
+
+/* Button */
+button {
+    color: var(--white);
+    padding: 10px;
+    font: 'Archivo', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+    border: 1px solid var(--darkpink);
+    border-radius: 20px;
+    background: var(--darkpink);
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+    margin-top: 5px;
+  }
+  
+
+
+  button:hover,
+  button:focus {
+    background: var(--white);
+    color: var(--darkpink);
+  }
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--darkpink); 
+    color: var(--lightblue);
+    padding: 40px 0; 
+    margin-top: auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+    z-index: 1;
+  }
+  
+  .footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer nav ul li {
+    margin: 10px; 
+  }
+  
+ footer nav ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+footer img {
+    width: 50px; 
+    height: auto; 
+    margin: 10px; 
+    max-width: 50px; 
+    max-height: 50px; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+
+
+
+  
+
+@media only screen and (max-width: 900px) {
+    header nav ul {
+        flex-direction: column; /* Change the flex direction to column */
+        line-height: 2.5;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust the margin for the column layout */
+    }
+
+
+    main {
+        margin-top: 1px;
+        margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+        margin-bottom: 100px;
+      }
+      
+      main h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      
+      main p {
+          margin-bottom: 10px;
+      }
+      
+      body {
+        background-size: 1382px 1319px; 
+    }
+}

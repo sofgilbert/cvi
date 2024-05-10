@@ -277,7 +277,7 @@ footer img {
 
 @media (min-width: 1371px) {
   footer {
-      max-width: none; /* Remove the max-width constraint for larger viewports */
+      max-width: none; 
   }
 }
 
@@ -286,20 +286,20 @@ footer img {
 /* Media Query for smaller viewports */
 @media only screen and (max-width: 768px) {
     header nav ul {
-        flex-direction: column; /* Change the flex direction to column */
+        flex-direction: column; 
         line-height: 2.5;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust the margin for the column layout */
+        margin: 10px 0; 
     }
 
     .footer-nav ul {
-        flex-direction: column; /* Change the flex direction to column */
+        flex-direction: column; 
     }
 
     .footer-nav ul li {
-        margin: 10px 0; /* Adjust the margin for the column layout */
+        margin: 10px 0; 
     }
 }
 
@@ -313,18 +313,39 @@ footer img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(86, 0, 47, 0.6); /* 0% opacity */
-    z-index: -1; /* doesn't cover content */
+    background: rgba(86, 0, 47, 0.6); 
+    z-index: -1; 
 }
 
 /* Ensure the body's position is relative to contain the pseudo-element */
 body {
     position: relative;
+    background-attachment: fixed;
 }
   /* Change color of .mission-statement */
-  .mission-statement {
+  .mission-statement h2 {
       color: var(--lightpink);
+      font-weight: 400;
+      text-align: right;
   }
+
+  .whatwedo h2{
+    color: var(--lightpink);
+    font-weight: 400;
+    text-align: left;
+}
+
+  .mission-statement p {
+    color: var(--white);
+    text-align: right;
+    
+}
+
+.whatwedo p {
+  color: var(--white);
+  text-align: left;
+  
+}
 
   /* Arrange main elements in a column */
   main {
@@ -339,16 +360,13 @@ body {
   .mission-statement, .whatwedo {
       margin-left: auto;
       margin-right: auto;
-      max-width: 50%; /* Limit the width to improve readability */
+      max-width: 70%; 
   }
 
   /* Positioning adjustment for .whatwedo */
 .whatwedo {
-  margin-top: 50px; /* Reduce or remove top margin to start higher */
-  margin-bottom: 100px; /* Optional: adjust bottom margin to control space below */
+  margin-top: 50px; 
+  
 }
 
-.whatwedo h2 {
-  text-align: left;
-}
 }
