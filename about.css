@@ -147,12 +147,12 @@ header {
   
   /* Navigation Styles */
   header nav {
-    width: 100%; /* Give the nav full width to center the contents properly */
+    width: 100%; 
 }
 
 header nav ul {
     display: flex;
-    justify-content: center; /* Center navigation items */
+    justify-content: center; 
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
@@ -165,6 +165,11 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: inherit; 
+}
+
+header nav ul li a.active {
+    font-weight: bold; 
+    color: var(--darkpink); 
 }
 
 

@@ -166,7 +166,10 @@ header nav ul li a {
     color: inherit; 
 }
 
-
+header nav ul li a.active {
+    font-weight: bold; 
+    color: var(--darkpink); 
+}
 
 
 

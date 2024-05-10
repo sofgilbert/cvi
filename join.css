@@ -168,6 +168,12 @@ header nav ul li a {
 }
 
 
+header nav ul li a.active {
+    font-weight: bold; 
+    color: var(--darkpink); 
+}
+
+
 
 
 
