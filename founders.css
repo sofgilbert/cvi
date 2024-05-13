@@ -146,12 +146,12 @@ header {
   
   /* Navigation Styles */
   header nav {
-    width: 100%; /* Give the nav full width to center the contents properly */
+    width: 100%; 
 }
 
 header nav ul {
     display: flex;
-    justify-content: center; /* Center navigation items */
+    justify-content: center; 
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
@@ -214,33 +214,33 @@ main {
 .descriptions {
     font-family: 'Archivo', sans-serif;
     display: grid;
-    grid-template-columns: .33fr 1fr; /* One fraction each for image and description */
-    gap: 50px; /* Provides spacing between columns */
-    width: 80%; /* Consistent with .founders for alignment */
+    grid-template-columns: .33fr 1fr; 
+    gap: 50px; 
+    width: 80%; 
     margin-top: 50px;
-    margin-bottom: 50px; /* Additional margin for spacing below */
-    max-width: 960px; /* Aligns with the founders max-width */
+    margin-bottom: 50px; 
+    max-width: 960px; 
 }
 
 .descriptions div:nth-child(odd) {
     display: flex;
-    justify-content: center; /* Centers the image in its grid column */
-    align-items: center; /* Vertically aligns the image */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .descriptions div:nth-child(even) {
     display: flex;
-    flex-direction: column; /* Stacks the h3 and p vertically */
-    justify-content: center; /* Vertically centers the content */
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .descriptions img {
-    width: 100%; /* Makes the image responsive within its container */
-    max-width: 300px; /* Limits image size to not become too large */
+    width: 100%; 
+    max-width: 300px; 
 }
 
 .descriptions h3, .descriptions p {
-    margin: 10px 0; /* Adds spacing between the header and paragraph */
+    margin: 10px 0; 
 }
 
 .descriptions h3 {
@@ -382,7 +382,7 @@ footer img {
 
 @media only screen and (min-width: 1200px) {
     .founders p {
-        max-width: 960px; /* Set a maximum width */
-        width: 100%; /* Adjust the width to be responsive */
+        max-width: 960px; 
+        width: 100%; 
     }
 }

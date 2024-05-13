@@ -283,12 +283,12 @@ footer img {
 
 @media only screen and (max-width: 900px) {
     header nav ul {
-        flex-direction: column; /* Change the flex direction to column */
+        flex-direction: column; 
         line-height: 2.5;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust the margin for the column layout */
+        margin: 10px 0; 
     }
 
 

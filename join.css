@@ -147,12 +147,12 @@ header {
   
   /* Navigation Styles */
   header nav {
-    width: 100%; /* Give the nav full width to center the contents properly */
+    width: 100%; 
 }
 
 header nav ul {
     display: flex;
-    justify-content: center; /* Center navigation items */
+    justify-content: center; 
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
@@ -239,13 +239,13 @@ textarea:focus {
     border: 1.5px solid var(--darkpink); 
     width: 400px; 
     padding: 10px; 
-    padding-right: 90px; /* Increased right padding to account for the arrow */
+    padding-right: 90px; 
     border-radius: 20px;
     color: var(--darkpink); 
 }
 
 .select__input::-ms-expand {
-    display: none; /* Hides the default arrow in IE */
+    display: none; 
 }
 
 
@@ -408,12 +408,12 @@ footer img {
 
 @media only screen and (max-width: 900px) {
     header nav ul {
-        flex-direction: column; /* Change the flex direction to column */
+        flex-direction: column; 
         line-height: 2.5;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust the margin for the column layout */
+        margin: 10px 0; 
     }
 
 

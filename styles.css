@@ -83,7 +83,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures that the body is at least as tall as the viewport */
+  min-height: 100vh; 
   background-color: var(--darkpink);
   background-image: url('images/background.svg');
   background-size: 100%;
@@ -333,16 +333,16 @@ footer img {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: space-between; /* Ensures footer stays at bottom */
+    justify-content: space-between; 
 }
 
 main {
-    flex: 1 0 auto; /* Allows main to expand and fill available space */
+    flex: 1 0 auto; 
 }
 
 footer {
-    flex-shrink: 0; /* Prevents the footer from shrinking */
-    width: 100%; /* Ensures footer extends full width */
+    flex-shrink: 0; 
+    width: 100%; 
 }
 
   /* Ensure the body's position is relative to contain the pseudo-element */
